@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bonheur+Royale&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>KYLE ARTIZA - EXPERIENCES MORE</title>
+</head>
+<body>
+    
+    <style>
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 40px 20px;
+            gap: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        .nContainer-about {
+            text-align: center;
+            font-size: 30px;
+            background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            padding: 20px;
+            animation: fadeInUp 0.4s ease-in-out;
+        }
+
+        .nContainer-about h1 {
+            margin-top: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        #but-exp {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ce7712;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        #but-exp:hover {
+            background-color: #9b580b;
+            color: white;
+        }
+
+        #left-about {
+            background-image: url('https://lh3.googleusercontent.com/d/1N0cIf2sF44qxGfGtohN3i_uVsZDaW7U0');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex: 1 1 300px;
+            height: 400px;
+            max-width: 400px;
+            transition: 0.5s;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        #left-about:hover {
+            transform: scale(1.05);
+        }
+
+        #right-exp {
+            flex: 1 1 400px;
+            max-width: 700px;
+            padding: 10px;
+        }
+
+        #RL-exp,
+        #LL-exp {
+            margin-bottom: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        #LL-exp {
+            margin-left: 0;
+            display: block;
+        }
+
+        #RL-exp ul,
+        #LL-exp ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-weight: 500;
+            color: white;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container-body {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            #left-about {
+                height: 250px;
+                width: 90%;
+                max-width: 100%;
+            }
+
+            #right-exp {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .nContainer-about h1 {
+                font-size: 2rem;
+            }
+
+            #RL-exp ul,
+            #LL-exp ul {
+                font-size: 1rem;
+            }
+
+            #but-exp {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-top: white 1px solid;
+}
+    </style>
+
+    <header>
+        <div class="container-head">
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/d/1Vrll2DomZ7CGNSNd2sUoie7NVbrSbkVu" width="70px" alt="logo">
+            </div>
+            <div id="container-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#portfolio"><span style="text-decoration: underline;">Experiences</span></a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="nContainer-about">
+        <h1>Experiences</h1>
+        <div class="container-body">
+            <div id="left-about"></div>
+            <div id="right-exp">
+                <div id="RL-exp">
+                    <ul>
+                        <li><p>PARAFINCZUK WOLF LAW FIRM -  INTAKE TPECIALIST -  JUNE 2023 - MAY 2024</p></li>
+                    </ul>
+                </div>
+                <div id="LL-exp">
+                    <ul>
+                        <li><p>Outbound Calls</p></li>
+                        <li><p>Inbound Calls</p></li>
+                        <li><p>Data Entry</p></li>
+                        <li><p>Review Documents</p></li>
+                        <li><p>Setting up appointments with clients</p></li>
+                        <li><p>Contacting clients prior to appointment date to confirm appointment</p></li>
+                    </ul>
+                </div>
+                <div id="RL-exp">
+                    <ul>
+                        <li><p>VISITING ANGELS  -  APPOINTMENT SETTER  -  JULY 2023  -  PRESENT </p></li>
+                    </ul>
+                </div>
+                <div id="LL-exp">
+                    <ul>
+                        <li><p>Outbound Calls</p></li>
+                        <li><p>Inbound Calls</p></li>
+                        <li><p>Data Entry</p></li>
+                        <li><p>Interviewing client / caregiver applicants</p></li>
+                        <li><p>Setting up appointments with clients and caregivers</p></li>
+                    </ul>
+            </div>
+            <div>
+                <center>
+                    <a id="but-exp" href="portfolio.html">BACK</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <footer>
+        <p style="font-size: 15px;">All rights reserved</p>
+    </footer>
+    
+</body>
+</html>

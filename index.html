@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bonheur+Royale&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>KYLE ARTIZA</title>
+</head>
+
+<style>
+
+    p, h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-body {
+        display: flex;
+        align-items: center;
+        background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: max-content;
+        width: 100;
+        animation: fadeInUp 0.5s ease-in-out;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        padding-bottom: 30vh;
+    }
+    
+    #left {
+        width: 70vh;
+        height: 50%;
+        margin-right: 14%;
+        margin-left: 5%;
+        animation: fadeInUp 0.5s ease-in-out;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    
+    #greet {
+        margin-left: 20px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    #greet-1 {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        font-size: 40px;
+        width: 300px;
+        margin-left: 45px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    
+    #greet-1 h1 span {
+        animation: colorExample 1s infinite;
+    }
+    
+    #modifier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+    
+    #logo1 {
+        transform: rotate(40deg);
+        width: 55px;
+        height: 55px;
+    }
+    
+    #hire {
+        display: inline-block;
+        font-size: 5px;
+        font-weight: 700;
+        color: black;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #ce7712;
+        margin-left: 10px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    
+    #hire:hover {
+        transform: scale(1.1);
+        background-color: #f5a623;
+    }
+    
+    #right {
+        width: 62vh;
+        height: 55vh;
+        animation: fadeInUp 0.7s ease-in-out;
+        transition: 0.7s;
+        animation: sizeExample 0.5s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    
+    #right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    
+    #right img:hover {
+        transform: scale(1.1);
+    }
+    
+    /* Keyframe Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes sizeExample {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes colorExample {
+        0% { color: #f5a623; }
+        50% { color: #ffffff; }
+        100% { color: #f5a623; }
+    }
+
+    #left p{
+        font-size: clamp(0.5rem, 3vw, 2rem);
+    }
+
+    #left h1{
+        font-size: clamp(2.5rem, 5vw, 5rem);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 1024px) {
+        #left, #right {
+            margin: 20px 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .container-body {
+            flex-direction: column;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        #left {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
+    
+        #greet-1 {
+            width: 100%;
+            margin-left: 0;
+            font-size: 32px;
+        }
+    
+        #right {
+            width: 90%;
+            height: auto;
+        }
+    
+        #right img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        #modifier {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #greet {
+            font-size: 24px;
+        }
+    
+        #greet-1 {
+            font-size: 26px;
+        }
+    
+        #logo1 {
+            width: 45px;
+            height: 45px;
+        }
+    
+        #hire {
+            font-size: 14px;
+            padding: 12px;
+            margin-left: 0;
+        }
+    }
+    </style>
+    
+    
+    
+
+<body>
+
+
+    <header>
+        <div class="container-head">
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/d/1Vrll2DomZ7CGNSNd2sUoie7NVbrSbkVu" width="70px"
+                    alt="logo">
+            </div>
+            <div id="container-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span style="text-decoration: underline;">Home</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Experiences</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+        <div class="container-body">
+            <div id="left">
+                <p style="font-weight: bold;" id="greet">Hello</p>
+                <div id="greet-1">
+                    <h1 style="font-weight: bolder; ">I'm <span style=" animation: colorExample 1s infinite;">Kyle Artiza</span></h1>
+                    <div>
+                        <p style="font-weight: bold; margin-bottom: 25px;">Virtual Assistant</p>
+                        <div id="modifier">
+                            <img src="https://lh3.googleusercontent.com/d/1M8_6KIf3xb1CoXM0iPRVNJbjz-Tvxfnp" alt="arrow icon" id="logo1" width="40px" height="40px">
+                            <a href="contacts.html"><p id="hire">Hire Me</p></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <img src="https://lh3.googleusercontent.com/d/13Uw0bVGslxjS9vR194mLz9Fe86QIe_I0" alt="PROFILE PICTURE" id="right" >
+            </div>
+        </div>
+
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+</html>

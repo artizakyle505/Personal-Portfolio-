@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bonheur+Royale&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>KYLE ARTIZA - CONTACTS</title>
+</head>
+<body>
+    
+    <style>
+        .nContainer-about {
+            text-align: center;
+            font-size: 30px;
+            background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            color: black;
+            min-height: 100vh;
+            animation: fadeInUp 0.4s ease-in-out;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
+        }
+    
+        .nContainer-about h1 {
+            margin-top: 40px;
+            animation: fadeInUp 0.5s ease-in-out;
+            font-size: 2rem;
+        }
+    
+        .container-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100;
+            animation: fadeInUp 0.5s ease-in-out;
+            flex-wrap: wrap;
+        }
+    
+        .container-contacts {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    
+        #top {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            flex-wrap: wrap;
+        }
+    
+        #icon img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+    
+        #txt-contacts {
+            flex: 1;
+            text-align: left;
+        }
+    
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nContainer-about {
+                font-size: 1rem;
+            }
+    
+            .container-body {
+                height: auto;
+                padding: 2rem 1rem;
+            }
+    
+            #top {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+    
+            #icon img {
+                width: 80px;
+            }
+    
+            #txt-contacts p {
+                font-size: 1rem;
+                word-break: break-word;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            #icon img {
+                width: 60px;
+            }
+    
+            #txt-contacts p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    
+
+    <header>
+            <div class="container-head">
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/d/1Vrll2DomZ7CGNSNd2sUoie7NVbrSbkVu" width="70px" alt="logo">
+            </div>
+            <div id="container-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Experiences</a></li>
+                        <li><a href="#"><span style="text-decoration: underline;">Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="nContainer-about">
+        <h1>Contacts</h1>
+        <div class="container-body">
+            <div class="container-contacts">
+                <div id="top">
+                    <div id="icon">
+                        <img src="https://lh3.googleusercontent.com/d/1UsD9FtyhgFFwKtAxToapFHRlopZe1-Wc" width="180px" alt="CONTACT-LOGO">
+                    </div>
+                    <div id="txt-contacts">
+                        <p>+63 966-4966-547</p>
+                    </div>
+                </div>
+                <div id="top">
+                    <div id="icon">
+                        <img src="https://lh3.googleusercontent.com/d/14rbxFbFNMHk8vRUyDS9UTFK1yjbK1FZK" width="180px" alt="logo">
+                    </div>
+                    <div id="txt-contacts">
+                        <p>artizakyle505@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>All rights reserved</p> 
+    </footer>
+
+</body>
+</html>

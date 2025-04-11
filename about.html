@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bonheur+Royale&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Creepster&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>KYLE ARTIZA - ABOUT</title>
+</head>
+
+<body>
+
+    <style>
+        .nContainer-about {
+            text-align: center;
+            font-size: 2rem;
+            background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px 20px;
+            animation: fadeInUp 0.4s ease-in-out;
+            padding-bottom: 100px;
+        }
+
+        .nContainer-about h1 {
+            margin-bottom: 30px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        .container-body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 30px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        #left-about {
+            background-image: url('https://lh3.googleusercontent.com/d/1N0cIf2sF44qxGfGtohN3i_uVsZDaW7U0');
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 400px;
+            transition: 0.5s;
+
+        }
+
+        #left-about:hover {
+            transform: scale(1.1);
+        }
+
+        #right-about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-list {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        .about-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        .about-list li strong {
+            min-width: 150px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .about-list li span {
+            font-weight: normal;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            #left-about {
+                width: 250px;
+                height: 250px;
+            }
+
+            .about-list {
+                font-size: 1rem;
+            }
+
+            .about-list li strong {
+                min-width: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #left-about {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about-list li {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .about-list li strong {
+                min-width: 100px;
+            }
+        }
+    </style>
+
+
+
+
+
+    <header>
+        <div class="container-head">
+            <div id="logo">
+                <img src="https://lh3.googleusercontent.com/d/1Vrll2DomZ7CGNSNd2sUoie7NVbrSbkVu" width="70px"
+                    alt="logo">
+            </div>
+            <div id="container-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="#about"><span style="text-decoration: underline;">About</span></a></li>
+                        <li><a href="portfolio.html">Experiences</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="nContainer-about">
+        <h1>About Me</h1>
+        <div class="container-body">
+            <div id="left-about"></div>
+            <div id="right-about">
+                <ul class="about-list">
+                    <li><strong>Name</strong> <span>: Jan Kyle Christopher R. Artiza</span></li>
+                    <li><strong>Age</strong> <span>: 24</span></li>
+                    <li><strong>Date of Birth</strong> <span>: September 5, 2000</span></li>
+                    <li><strong>From</strong> <span>: Philippines</span></li>
+                    <li><strong>Language</strong> <span>: English, Tagalog</span></li>
+                    <li><strong>Freelance</strong> <span>: Available</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
